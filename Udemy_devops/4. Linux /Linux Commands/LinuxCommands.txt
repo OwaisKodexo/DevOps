@@ -1,0 +1,24 @@
+cat /etc/apt/source.list
+cat /etc/apt/source.list.d
+apt list | wc -l (word count list)
+du -sh (disk usage -s summarize -h = human readable form) 
+find / -type d -name vprofile-project (to find any missing directory in my case vprofile-project is the directory)
+echo -e "\e[1mThis is the bold text\e[0m" (to bold the text)
+ps -elf (to see the process )
+kill -l (to list all the signal)
+to export variables and if you want to add alias for everyone 
+vi /etc/profile  
+vi /etc/bash.bashrc (both work same)
+
+and if you want to add alias or export variable for the user 
+vi ~/.profile (logout once so bash take the file from this )
+vi ~/.bashrc (both work same )
+source ~/.profile
+
+
+ssh-keygen (to generate a key)
+ssh-copy-id <userName>@<hostname> 
+private key will be longer and public key will be shorter
+
+
+

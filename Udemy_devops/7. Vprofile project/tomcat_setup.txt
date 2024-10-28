@@ -1,0 +1,33 @@
+there is a difference between jdk and jre 
+
+JRE it is used to run java based application
+
+JDK java development kit to develop java application 
+
+we are going to build java application form the source code. . for this we need JDK
+
+cd /src/main/resources/ (remember this path throughout the course)
+
+
+we have application.properties file in the above mentioned folder 
+in this file we have db01:3306 (default port for mysql service)
+
+in the folder vprofile-project 
+we see the pom.xml 
+and run mvn install (this is going to take some time to build the application because its going to read the source code and built the artifact (Artifact is a deployable product))
+Artifact is basically an archive 
+archive in java is war, jar, ear like we have zip, tar 
+
+
+we have to remove the default application /usr/local/tomcat/webapps in this directory 
+with the name ROOT . . to deploy our artifact we have to remove this.. 
+
+cp target/vprofile-v2.war /usr/local/tomcat/webapps/ROOT.war if we don't copy with the root name its not be going to be the default application. it will be an application but its name will be vprofile not default . . 
+
+
+
+
+
+
+
+

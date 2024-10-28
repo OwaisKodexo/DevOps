@@ -1,0 +1,12 @@
+To install jenkins https://www.jenkins.io/doc/book/installing/linux/
+openjdk must be installed before jenkins installation
+Jenkins Username = kodexoLabs786
+password = kodexolabs@786
+email = johndoe@gmail.com
+There are two types of jobs in jenkins 
+Freestyle vs pipeline As A code
+like bashscript we write a script to automate the task same in jenkins we create the jobs 
+*FreeStyle* are all graphical jobs fill the form and see its output. but the problem with this is that we have many jobs and many types, and you need to connect together to create a pipeline. fetch the code build the code on another job run if you want to create a new job have to do all the same things 100 of clicks, its not recommended in real-time now, as now we need everything as a code, 
+
+*Pipeline as a code*
+pipeline created in groovy, recommended now, all the scripts a

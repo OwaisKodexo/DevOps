@@ -1,0 +1,62 @@
+RabbitMQ.txt
+
+Rabbit MQ 
+-> https://www.rabbitmq.com/docs/download
+-> https://github.com/marcel-dempers/docker-development-youtube-series.git (rabbitmq file is in messaging dir)
+
+create rabbit network in docker 
+-> docker network create rabbits 
+-> docker run -d --rm --name rabbit-1 --hostname rabbit-1 --net rabbits -p 5672:5672 -p 8080:15672 rabbitmq:latest
+Now create docker image from dockerfile 
+-> docker run -it --rm --net rabbits -e RABBIT_HOST=rabbit-1 -e RABBIT_PORT=5672 -e RABBIT_USERNAME=guest -e RABBIT_PASSWORD=guest -p 80:80 <image:name>
+-> docker run -it --rm --net rabbits -e RABBIT_HOST=rabbit-1 -e RABBIT_PORT=5672 -e RABBIT_USERNAME=guest -e RABBIT_PASSWORD=guest <consumer image>
+
+***************************************************************************************************************************************************************************************
+
+https://www.rabbitmq.com/docs/clustering
+Node consists of two parts one is prefix and other is hostname for e.g (rabbit@ubuntu)
+RabbitMQ uses node identifiers in order to communicate wit hone another, which contain the <prefix>@<hostname>, this is very imp requirement for the clustring, hostname identifier is the very imp for rabbitMQ to communicates with one another and they able to resolve DNS 
+if we are using EC2, AzureVM make sure that the EC2 hostname or the VMnames is what we use to form the cluster 
+and then Port access is very imp 
+When a node starts up, it checks whether it has been assigned a node name. This is done via the RABBITMQ_NODENAME environment variable. If no value was explicitly configured, the node resolves its hostname and prepends rabbit to it to compute its node name.
+
+
+*********************************************************************************************************************************************************************
+RabbitMq clustering
+
+QIWHTMUFOLFJVDFIQSLQ cookie
+
+
+docker run -d --net rabbits \
+-v ${PWD}/config/rabbit-1/:/config \
+-v /mnt/efs/rabbitmq/rabbit1:/config \
+-e RABBITMQ_CONFIG_FILE=/config/rabbitmq \ 
+-e RABBITMQ_ERLANG_COOKIE=QIWHTMUFOLFJVDFIQSLQ 
+--hostname rabbit-1
+--name rabbit-1
+-p 8080:15672
+rabbitmq:4.0-management
+
+
+docker run -d --net rabbits \
+-v ${PWD}/config/rabbit-2/:/config \
+-v /mnt/efs/rabbitmq/rabbit2:/config \
+-e RABBITMQ_CONFIG_FILE=/config/rabbitmq \ 
+-e RABBITMQ_ERLANG_COOKIE=QIWHTMUFOLFJVDFIQSLQ 
+--hostname rabbit-2
+--name rabbit-2
+-p 8081:15672
+rabbitmq:4.0-management
+
+
+
+docker run -d --net rabbits \
+-v ${PWD}/config/rabbit-3/:/config \
+-v /mnt/efs/rabbitmq/rabbit3:/config \
+-e RABBITMQ_CONFIG_FILE=/config/rabbitmq \ 
+-e RABBITMQ_ERLANG_COOKIE=QIWHTMUFOLFJVDFIQSLQ 
+--hostname rabbit-3
+--name rabbit-3
+-p 8082:15672
+rabbitmq:4.0-management
+

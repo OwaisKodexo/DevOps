@@ -1,0 +1,15 @@
+if you want to automate somthing,
+make sure you know how to do it manually. 
+
+Provisioning should always be stack in this sequence 
+1. MySQL (Database SVC)
+2. Memcache (DB Caching SVC)
+3. RabbitMQ (Broker/Queue SVC)
+4. Tomcat (APplication SVC)
+5. Nginx (Web SVC)
+
+when we access any website from the browser it listen on the port 80 for http and port 4434 for https 
+
+
+
+

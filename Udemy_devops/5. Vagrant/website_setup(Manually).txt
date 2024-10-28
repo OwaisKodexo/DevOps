@@ -1,0 +1,42 @@
+we want to setup a website on centOS for this we o we sue ready-made template download it from the internet. . 
+tooplate.com (Website for donwloading template)
+vagrant global-status 
+if have any previous instance delete it . . 
+vagrant init with the box name in our case centos 9 
+configure the vagrant file 
+uncomment 
+config.vm.network "private_network", ip: "192.168.56.22"
+config.vm.network "public_network" (if this line is commented you cannot see the website on browser)
+vagrant up 
+vagrant ssh 
+sudo su (siwtch to root user)
+nano /etc/hostname 
+hostname (whatever you want to name the host) not mandatory logout and login again 
+yum (yum is like apt we use in centOS) install httpd (its the website package) wget (from this we going to donwload the html template) vim (text editor)  unzip zip -y (yes to all commands)
+systemctl start httpd 
+systemctl enable httpd 
+ip addr show (to check the ip address) 
+
+now to add the content in the website 
+~# cd /var/www/html
+create a file in this folder
+nano index.html (create the file with the same name which we throw on the browser)
+systemctl restart httpd (or reload the service)
+
+now because we are downloading it from the tooplate so we download it in a temporary folder 
+cd /tmp/
+wget download link 
+if in a zip form uzip it 
+go to the uzip folder 
+check all the content from ls command 
+cp -r* (we copy all the content of the folder * mean all the content in the folder) /var/www/html/
+ls /var/www/html 
+restart httpd service 
+systemctl status httpd 
+also check the firewall service
+systemctl status firewalld (if its running we have to stop it)
+
+
+
+
+

@@ -1,0 +1,13 @@
+cat /etc/hosts
+cat /etc/resolv.conf
+sudo netplan apply
+sudo netplan generate
+sudo netplan try
+sudo netplan status
+this can run in CentOS, openSUSE,RHEL etc
+
+ping (test connectivity to a remote host)
+ifconfig (configure network interfaces) (deprecated)
+ip (manage network interfaces, ip address and routes)
+netstat (display network connection) important)
+ss (socket statistic)

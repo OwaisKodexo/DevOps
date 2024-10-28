@@ -1,0 +1,78 @@
+EC2 = Elastic compute cloud EC2 is the virtual machine. . 
+yu can select t2, t3 micro accrording to your work.
+
+
+
+EBS = Elastic Block Storage is virtual hard disk/hard drive in amazon we can attach extra volume can scale up and down in amazon as a volume we can create it and also backup by snapshot the volume if the device corrupted it can be recover by snapshot (conditions applied)
+
+
+
+ELB = Elastic Load Balancer 
+there are three types of load balancer 
+Application Load Balancer 
+Network Load Balancer 
+Classic Load Balancer 
+
+Application Load Balancer
+	based on advance application level information includes the content of the request. Its work on Application layer of OSI 
+	model 
+
+Network Load Balancer 
+	It can handle millions of request/sec
+	IT works on the forth layer of OSI model.  
+
+Classic Load Balancer 
+	Classic load balancer that routes traffic bassed on either application or network level information
+	Its ideal for simple load balancing for traffic across multiple EC2 instances. its work on network layer  
+
+https://docs.aws.amazon.com/elasticloadbalancing/ 
+for further information
+
+
+
+Cloud watch is the monitoring service, It monitor service of AWS Environment. . 
+But now it has much more than that, its also a login solution and events
+it will create standard metrics for any services. in other monitoring tool. these are called checks. 
+there is by default monitoring but if you want to add monitoring you can do it by custom metrics. you can set alarm notifications, 
+There are monitoring services for each serivces like, 
+on EC2 instance you can it on monitoring tab. 
+on Volumes we have monitoring tab. 
+Cloud watch has also Events in which you can see the real time streams of system events like launching instance, terminating instacne, taking a snapshot, creating a volume, mostly it used to integrate with lambda function. 
+all the services has the option of logs 
+Amazon SNS (Simple notification service)
+
+
+
+
+EFS = Elactic file system 
+watch the video on AWS 
+
+
+
+Autoscaling group 
+
+
+
+
+
+
+S3 = Simple storage service. 
+most popular and the oldest one in AWS,
+S3 Bucket is like the top level folder, when we upload the data in bucker it replicated in multiple facilities 
+Unlimited Storge. 
+S3 stores data as object in the bucket 
+Bucket name has to be unique 
+There are different type in S3 bucket 
+*S3 Standard* = is the most common type use for general purpose storage, fast access and object replication in multiple zones, Its use for frequently access data. 
+*S3 IA Infrequent Access* = long lived but for less frequently access data. it has slow access, 
+*S3 One Zone IA* = less frequently access data, but require rapid access when needed. 
+*S3 Intelligent Tiering* = Automatically move data to most effective tier. 
+*S3 glacier* = low cost storage class for archiving data, when we rarely access the data like yearly for audit. 
+*S3 Glacier Deep Archive* = lowest cost storage, retrieval time of 12 hrs. 
+
+
+
+
+
+
+RDS = relational Database service from AWS  

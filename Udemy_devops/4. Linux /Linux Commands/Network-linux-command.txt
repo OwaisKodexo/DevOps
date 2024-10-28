@@ -1,0 +1,33 @@
+ping -c (we use ping command to test a connectivity)
+ping -s 56 (it mean -packet size will be 56 )
+htop 
+atop 
+iftop 
+nload 
+nslookup -type=mx gmail.com
+ip addr show 
+ip addr show db01 (to show specific interface)
+sudo ip addr add 192.168.1.0/24 db01
+sudo ip addr del 192.168.1.0/24 db01
+sudo ip link set deb01 up 
+sudo ip link set deb01 down
+dig google.com
+tcpdump -c  (-c = count)
+ifconfig (configure network interface)
+netstat -antp (is more important than other commands)
+netstat -l (show all listening port)
+netstat -t (show tcp port)
+netstat -u (show udp port)
+netstat -r (show routing table )      
+
+netstat command has been deprecated now ss command is using
+ss -tunlp 
+ss -a (all listening port)
+ss -s 
+nmap (Network Mapping) 
+nmap localhost 
+dig www.google.com
+nslookup www.google.com  command 'pamp' from deb paml (4.9j+dfsg-4)
+route -n (to see gateways )
+arp (to view or add the content to the kernels ARP table.)
+mtr (this is like tracert but this is live)

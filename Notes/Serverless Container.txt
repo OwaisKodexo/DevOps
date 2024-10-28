@@ -1,0 +1,17 @@
+Kubernetes Managing tools 
+AWS = Elastic Kebernetes Services
+Azure = Azure Kubernetes Services 
+GoogleCloud = Google Kubernetes Engine 
+
+AWS Karpenter
+
+GKE AutoPilot 
+EKS fargate
+
+ServerLess Container 
+Google cloud Run 
+AWS Fargate 
+Azure Container Instances 
+ 
+
+

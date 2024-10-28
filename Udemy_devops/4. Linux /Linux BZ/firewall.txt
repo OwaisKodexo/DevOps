@@ -1,0 +1,25 @@
+network security device or software
+There are three rules in firewall 
+Allow rule 
+Deny rule 
+Default deny policy (deny all traffic by default, only allowed specified traffic)
+Features: Access Control, traffic Monitoring, Logging and Reporting VPN Support
+Active node and passive node 
+ubuntu has its own firewall which is known as "Uncomplicated Firewall UFW"
+ufw status 
+ufw enable (to enable firewall)
+ufw disable (to disable firewall)
+ufw app list (to show the list) 
+# ufw allow OpenSSH (you can allow by package name)
+# ufw allow ssh (can also allow by service name)
+# ufw allow 22 (or can allow by port number)
+# ufw deny 22 (Denies incoming connection on port 22)
+# ufw allow from 192.168.1.1 (allow connection from specific IP)
+# ufw deny from 192.168.1.1 (deny connection from specific IP)
+# ufw allow in on eth0 to any port 80 (allow incoming connections on port 80 on eth0)
+# ufw allow in on eth0 to any port 80 (deny )
+# ufw allow 1000:2000/tcp (can also give range of ports)
+# ufw deny 1000:2000/tcp
+ 
+   
+

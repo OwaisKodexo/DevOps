@@ -1,0 +1,44 @@
+init is the first process which start in system 
+is ki PID hamesha 1 hoti hai 
+/etc/inittab yeah is file me hota hai yaha se start hota hai
+service [service-name] start 
+service [service-name] stop
+service [service-name] restart
+service [service-name] reload
+service [service-name] status
+service [service-name] condstart (conditional start)
+chkconfig [service-name] on (to enable service as system start)
+chkconfig [service-name] off (to disable service at start)
+chkconfig [service-name] (to check id service is enable at startup)
+chkconfig [service-name] add (to add the service)
+
+*****************************************************************************************
+
+Run levels 
+
+State of init is 
+
+7 states hain run level k (run level digit or init digit)
+0: shuts down the system
+1: single user mode 
+2: multi-user-mode without networking 
+3: multi-user mode with networking (with cli)
+4. user-definable
+5: multi-user mode with networking (with gui)
+6: reboot the system to restart it
+
+*******************************************************************************************************
+ab linux me init ka new system framework aa chuka hai jis ko ham systemd kehte hain 
+systemd is system and service manager for the linux
+managing services with systemd   
+systemd ne init ko overwrite kr dya hai 
+
+systemsctl start <service name>
+systemctl stop <service name>
+systemctl enable <service name> 
+systemctl disable <service name>
+systemctl is-enabled <service name> (to check weather its enable or not)
+
+ 
+
+

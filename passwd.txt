@@ -1,0 +1,40 @@
+Jenkins ->
+kodexoLabs786
+kodexolabs@786
+*******************************************
+nexus -> 
+admin , admin123
+*******************************************
+sonar ->
+admin, admin 
+Security token -> 64027cbe8cc21052c97f681cb6cf179e5d371653
+*******************************************
+
+sentry ->
+owais.ashraf@kodexolabs.com
+kodexolabs@786
+
+
+*******************************************************************
+
+chatbot_UI
+
+kodexo@test.com	
+test1234
+
+******************************************************************
+
+supabase 
+
+projectName = Chatbot_UI
+iic8RBVo3ysMuWSk password 
+xAp@gjVw@7yaS5z db password
+
+
+
+***********************************************************************************************************************************
+AWS EC2
+YR!JgS4-
+https://236529949305.signin.aws.amazon.com/console
+owais-ashraf-sm
+KodexoEc2sm1234$

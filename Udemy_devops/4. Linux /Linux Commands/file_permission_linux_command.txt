@@ -1,0 +1,52 @@
+linux me ek user lazmi hota hai or woh woh hota hai jo create krta hai mtlb installation k time me ek user create ho jata hai.
+umask (user file-creation mode mask) its also a command 
+There are three types of user in linux 
+owner 
+Group
+others 
+chmod = change mod to change the permission(read, write and execute) + is for enable and - is for disable 
+u+x (given the execution permiss	ion to the user)
+g-w (disable the write permission for group)
+o+r (enable the read permission for others)
+
+to change ownership we use
+chown <newOwner> <filename>
+chgrp <groupName> <fileName>
+chown <newOwner>:<NewGroup> <filename> to change both through one command
+chown -R (to change the subdirectories ownership)
+
+*********************************************************************************************
+TO add/del the user 
+cat /etc/passwd (this directory contain all the user list)
+cat /etc/group (this directory contain all the group list) 
+when new user created he get (name, id , group, gid, homeDir, /bin/bash *one shell*)
+sudo useradd (*low-level command* will not create a home directory, if you want to create use -m with command)
+sudo adduser (High level command interactive and create home directory) 
+sudo groupadd <groupName>
+sudo passwd (to set the password for the user)
+passwd <userName> (if want to give password to existing user)
+sudo adduser owais (owais has been added in user)
+
+*Additional Information*
+there are two types of user or accounts (system and custom accounts *above 1000 are custom accounts) 
+Theoretically we can add upto 4 billion user 
+but the default range is 1000 to 60,000 
+0 to 999 are fixed for system (in some distribution it can be upto 500) but mostly 1000 are fixed for system 
+
+
+sudo userdel (to delete the user but the home directory will not be deleted)
+sudo deluser (deluser, delgroup - remove a user or group from the system)
+sudo userdel -r (to del the home directory)
+sudo groupdel (to delete from the group)
+sudo delgroup 
+
+groupmod
+usermod -l new_username old_username: Changes the user's login name.
+usermod -aG groupname username: Adds the user to an additional group.
+usermod -d /new/home/dir username: Changes the user's home directory.
+usermod -s /bin/bash <userName> to change the shell 
+usermod -L <username> to lock the user *you cannot login to this user*
+
+
+
+

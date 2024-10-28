@@ -1,0 +1,27 @@
+Tools which we will be using 
+Oracle 
+Git Bash 
+Vagrant 
+Chocoate / Brew for MacOS 
+
+Some other tools 
+JDK8
+Maven 
+IntelliJ
+Submime text editor 
+AWS CLI
+Terraform 
+
+Signups for account 
+Github 
+Domain Purchase 
+DockerHub
+SonarCloud 
+
+AWS 
+Free Tier Account 
+IAM with MFA (Multi Factor Authentication)
+Billing Alarm 
+Certificate Setup for using HTTPS secure connection
+
+ 

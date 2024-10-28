@@ -1,0 +1,4 @@
+aws configure (to configure the IAM user)
+aws sts get-caller-identity (shows what user ID you are using)
+aws ec2 describe-instances (will show the instances in the particular region)
+

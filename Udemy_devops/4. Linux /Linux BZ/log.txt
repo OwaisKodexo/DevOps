@@ -1,0 +1,6 @@
+/var/log 
+it is the directory which stores all of your directory 
+
+/var/log/kern.log (stores kernal event) 
+/var/log/cron (store information about cron jobs)
+ 

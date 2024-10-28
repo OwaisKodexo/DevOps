@@ -1,0 +1,19 @@
+https://www.youtube.com/watch?v=ZJJHm_bd9Zo
+
+What is kafka ???
+jo hamara db hota hai us ka throughput buhat kam hota hai . . (Throughput mean kitne ops (Operation per second) ap kr skte hain). . db me high performance task nh kr skte . . agr kare ge to db down hojaye ga . . . 
+for example discord . . agr ham db me koi cheez insert krte hain to woh bh time leta hai for e.g discord me mein ne mxg kiya ab woh sab user tk pohache ga 200ms bad to ab jab buhat sare mxg at a time insert ho ge db me to db phat jaye ga 
+
+another instance is uber k ap ko real time location chahye to ab 1000 of users ka real time location user tk pohachana 
+
+to kafka ka throughput high hai (yeah db ka alternate nahi hai) because storage is temporary 
+large amount of data hold nh kr skta buhat time k lye 
+
+db ka storage buhat high hai . . billion of record rkh skte hain 
+ap db me query kr sakte hian . . 
+kafka me query nh kr skte . . 
+to 2no ko ek sath use krna hai . . 
+
+
+
+

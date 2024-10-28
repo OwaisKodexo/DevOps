@@ -1,0 +1,18 @@
+what is rabbitmq ??
+its a message broker . . 
+
+for instance hamare pas 
+app1 hai to ek server p deploy hai 
+app2 hai dosre server p deploy hai 
+app3 hai tesre server p deploy hai 
+
+ab agr app1 se ham request send krte hai app2 me to waha se call k against kuch response de ga. 
+
+aur ab agr app1 requset send krta hai app2 me aur phr kuch aesi logic h ya kuch aesa hai k app2 app3 ko response kare ga . . 
+ab is situation me age agr app2 down hai ya response nh kr rha . . ya app3 down hai us ne response back nh kiya to communication break ho jaye ga. . 
+for e.g koi ecommerce website hai to ham ne cart me add kiya koi item aur phr purchase kiya ab agr purchase infrmation team tk nh pohanchi kisi bh waja se to masla hai to aesi cheez k lye aate hain message broker 
+
+to ab ap direct app2 ko request send nh karege bal k rabbitmq me queue me send kare ge ab agr app ka server down bh howa to rabbitmq queue ko hold rkhe ga . . 
+aur jese hi server up ho ga rabbitmq us ko respond kar de ga 
+
+aur yeah queue ki fifo method ki form me store krta hai to jo first mxg aye ga wohi jayega bh 

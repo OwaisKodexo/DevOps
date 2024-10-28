@@ -1,0 +1,10 @@
+Why we use container instead of Virtual machine 
+Container is like a miniature operating system (mini os). Its a light weight. Containers start up in seconds because they don’t need to boot up a full OS. it do not need a full OS for each instance. 
+This leads to faster startup times and reduced resource usage.
+VMs require a full OS for each instance, which means they are heavier and consume more resources (memory, storage, CPU).
+Containers are well-suited for microservices architectures where applications are broken down into smaller, independently deployable services. They can be easily scaled up or down to meet demand.
+Containers provide process-level isolation, while VMS are use when we need strict isolation. 
+
+Docker overview 
+Hub.docker.com
+

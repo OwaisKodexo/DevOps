@@ -1,0 +1,65 @@
+service docker status (show the docker status)
+systemctl status docker (same as service docker status)
+docker --version (show the docker version)
+docker version (give the complete detail of client and server)
+Docket build -t <name> . (to create a image) -t (tag to name the image)
+docker pull <image_name> (to pull a image from registry) 
+docker run -d -P <"image name"> (up the container in detached mode and it will take the host port automatically)
+docker run -it ubuntu /bin/bash (pull if image not available, up the container and -it interactive terminal session)
+docker run hello-world (to create a container and run the container *hello-world is the image name*)
+docker images (it will show you the images)
+docker image ls 
+docker ps (will show you the running container)
+docker ps -a (to list all the container)
+docker container ls (same as ps command)
+docker container ls -a (same as ps -a command)
+cat /var/lib/docker/containers (to see container in directory )
+docker run --name web01 -d -p 9080:80 nginx 
+	(docker run this container which name is web01 -d (run in it background not on foreground)
+	-p port number will be 9080 is the host port and 80 is the container port. nginx is the image which it will run.
+docker port <containerName> (kon kon se port expose kiye hain, container me jitne bh port map hai host k sath dkh jaye ge)
+docker inspect <"container name"> (complete detail of container)
+docker logs <"container id"> (can also write only first three letter of container id) (show the logs of container)
+docker start <"container id"> (up the container/start the container)
+docker stop <"container id"> (stop the container)
+docker stop $(docker ps -a -q) (to stop all the running container)
+docker kill <"container id"> (to stop the container)
+docker rm <"container id"> (first stop and than remove)
+docker rm $(docker ps -a -q) (to delete all the running container)
+docker rmi <"image id"> (to remove the image)
+docker rmi -f $(docker images -q)
+docker attach <containerName> (to go inside container)
+docker info to see complete information
+which docker (to see the path)
+docker search <image-name> (to see images in docker hub)
+docker diff <containerName> (too see the difference we have changed in container)
+docker commit <containerName> (which you want to give) and <imageName> (if you want to give) 
+	(to create the image of the running container)
+	
+docker exec -it <containerName> <shell-executable>(/bin/bash) 
+	(to go inside a container in interactive mode in terminal)
+	
+******************************************************************************************************************
+
+docker run -it --name <containerName> -v /<volumeName> ubuntu /bin/bash
+	(-v *to create a volume and then where we want to create dir we will give path, in this we are creating in root dir)
+
+docker run -it --name container2 --privileged=true --volumes-from <containerName> <imageName> /bin/bash
+	(run will create a container -it *interactive mode in terminal* containerName privileged *jo bh rights us dir k pas hain is k
+	pas bh ajaye* volume from which *container you want volume* image *from which image you want to build container* path)
+
+docker run -it --name hostContainer -v /home/user:/ozil --privileged=true --volumes-from <containerName> <imageName> /bin/bash
+	(this command is to sync volume with the host pehle host ka path phr container ka path )
+
+docker volume ls 
+docker volume create <volumeName> 
+docker volume rm <volumeName>
+docker volume prune (it removed all unused docker volume)
+docker volume inspect  <volumeName>
+docker container inspect <containerName>
+
+*******************************************************************************************************
+
+docker compose build (to builld the image)
+docker compose up -d (you can also use this instead of build this will build and up the container)  
+  

@@ -1,0 +1,68 @@
+IDE's 
+Eclipse 
+Visual Studio 
+Pycharm 
+Atom
+Sublime Text 
+ 
+etc etc .
+
+Version Control 
+GIT 
+SVN 
+TFS
+Perforce 
+etc etc 
+
+Build Tools 
+Maven, ANT , Gradle 
+MSBuild, Visual Build 
+IBM Urban Code 
+Make 
+Grunt 
+
+Repositories which stores artifacts 
+Sonatypes Nexus 
+JFRPG Artifactory 
+Archiva 
+CloudSmith Package
+Grunt 
+
+Continous Integration Tools 
+Jenkins 
+CircleCI 
+TeamCity 
+Bamboo CI 
+Cruise Control 
+
+
+System Automation softwares
+Ansible, Puppet, Chef
+
+Cloud Infrastructure Automation softwares (IAC) 
+Terraform and Cformation 
+
+CICD Automation softwares 
+
+
+Architectural Design of various services
+NginX
+Apache Tomcat (Java web application service)
+RabbitMQ
+Memcached
+MySql
+
+
+Architectural Design for automation services
+Vagrant 
+Virtual Box,
+GitBash. 
+
+
+coolify (can deploy app supported both F.E, & B.E )
+pocketbase
+supabase 
+appwrite 
+
+
+

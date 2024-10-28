@@ -1,0 +1,52 @@
+http://mirrorlist.centos.org/?release=8&arch=x86_64&repo=AppStream&infra=vag [Could not resolve host: mirrorlist.centos.org]
+Error: Failed to download metadata for repo 'appstream': Cannot prepare internal mirrorlist: Curl error (6): Couldn't resolve host name for http://mirrorlist.centos.org/?release=8&arch=x86_64&repo=AppStream&infra=vag 
+
+if getting this error in centos this mean that mirrorlist website is not running to solve this: 
+
+cd /etc/yum.repos.d/
+
+# sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
+sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
+
+yum -y update
+
+***********************************************************************************************************************************
+
+jenkins git fetch --tags --force --progress -- https://github.com/owais-ashraf/vprofile-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10 ERROR: Error fetching remote repo 'origin'
+
+solution =
+
+I was seeing the same issue, but disk space and VM memory were not the problem. What fixed it for me was making the job re-clone on build:
+
+Go to the job's "Configure" page
+Under Source Code Management → Git → Additional Behaviors, add a behavior "Wipe out repository & force clone"
+Save
+Build
+
+
+**********************************************************************************************************************************
+Delete Ec2 keypair 
+https://linux.how2shout.com/add-a-new-key-pair-to-your-exisitng-aws-ec2-instances/
+
+**********************************************************************************************************************************
+unexpected token < in JSON at position 0
+
+if this error occurs in chatbot_ui this mean that there is url mistake in config.toml file in supabase folder
+
+
+****************************************************************************************************************************************
+
+if getting error in flameshot screenshot 
+
+install flameshot 
+keyboard shortcut 
+in command add this command "script --command "flameshot gui" /dev/null"
+and key PrtScr it will work fine
+
+
+**************************************************************************************************************************************
+
+
+brave pinch to zoom 
+
+brave://flags/#ozone-platform-hint -> in the search bar and then ozone-platform-hint= auto

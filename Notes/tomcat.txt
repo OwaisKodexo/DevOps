@@ -1,0 +1,8 @@
+tomcat is a service form apache 
+apache httpd and apache tomcat are two different services . 
+tomcat is open source java servlet container. .
+that mean you can host java based web application 
+systemd file is the configuration file for the systemctl command 
+
+
+

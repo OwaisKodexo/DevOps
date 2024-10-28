@@ -1,0 +1,12 @@
+Following are the steps for Pipeline in Jenkins 
+Jenkins setup
+Nexus Setup 
+Sonarqube
+Security Groups
+Plugins 
+Integrate
+	-> Nexus 
+	-> SOnarQube
+Write Pipeline script 
+Set notification (if build would not successfully done it will notify us or give an error) 
+ 

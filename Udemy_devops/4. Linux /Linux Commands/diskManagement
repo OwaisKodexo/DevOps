@@ -1,0 +1,23 @@
+fdisk is use to manage partition 
+primary partition should not be more than 4 partitions 
+good practice is to keep one primary partition
+dev is the directory where you can get the drivers information
+to create a new partition 
+sudo fdisk /dev/sdx (x ki jaga 'a' ho ga 'b' ho ga)(to create a partition)
+n (to create a new partition)
+p (for primary)
+1 (partition number 1)
+w (to save the above) 
+partprobe (aksar disk ap ko nazar nahi aati hai to ap is command se dekh sakte hain)
+mount /dev/sdb1 /mnt (maybe it will give an error to solve this)
+mkfs.ext4 /dev/sdb1 (to create a file system like in window we format in fat & ntfs partition)
+reboot the machine (but reboot k bad mount disk available nh ho gi) to is k lye apko batana parega file system me k jab reboot ho k aao to is partition ko yaha p map krna hai aur jab bhi is partition ko long term rkhna hai to ham yeah kam krege. 
+nano /etc/fstab (fstab = filesystem table)
+
+/dev/sdb1 /mnt ext4 defaults 0 0 (first column is partition path, press tab, where you want to mount it than format type defaults for option 0 mean no dump code and 0 no fsc *file system check* code)
+mount -a (it will mount the all the entries from fstab file )
+
+lsblk (susbtitute of fdisk *list block device*)
+
+
+

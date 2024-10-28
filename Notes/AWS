@@ -1,0 +1,4 @@
+how to connect with AWS EC2 instance 
+open terminal 
+ssh -i <pathwherekeyisdownloaded> <instanceOS>@<publicIP copy from AWS instance> (below is the example)
+ssh -i /home/ozil/Desktop/Docker_key.pem ubuntu@13.51.193.103

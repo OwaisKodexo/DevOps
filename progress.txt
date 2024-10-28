@@ -1,0 +1,19 @@
+24-6-2024 Day 1 = Just create the s3 bucket on AWS
+25-6-2024 Day 2 = Just watched the videos 
+26-6-2024 Day 3 = Installing ubuntu and other softwares 
+27-6-2024 Day 4 = Deploy application to beanstalk through GitHub action 
+28-6-2024 Day 5 = off
+29-6-2024 weekend
+30-6-2024 weekend
+8-7-2024 Al-karam (due to job couldn't be able to give time)
+5-8-2024 Day 36 = Learn Linux and Networking, Docker, Bash Script, AWS (partial) yml, json, Vagrant, Nginx, 
+3-9-2024 Day 66 = Learn about sentry self-hosted
+4-9-2024 Day 67 = deployed self-sentry through EC2 instance 
+5-9-2024 Day 68 = AWS (EC2, EFS, EBStorage, S3, Cloudwatch, Rational Database, Route 53, ACM, VPC, IAM) 
+6-9-2024 Day 69 = learn Maven, practice on KodeKloud,  
+7-9-2024 Day 70 = Sunday
+8-9-2024 Day 71 = Jenkins
+9-9-2024 Day 72 = Jenkins (Freeway practice)
+10-9-2024 Day 73 = Jenkins (freeway practice and install plugins for CI )
+11-9-2024 Day 74 = jenkins
+

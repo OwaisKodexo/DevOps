@@ -1,0 +1,37 @@
+CloudFront is a Content Delivery Network which mean its use to reduce the latency 
+what is the meaning of latency 
+for Example you have a website which server is in America and when your user request for your website it will definitely take time to return the content what content delivery network do is the cache the data in edge server for 24 hours (default time can be change) 
+how CloudFront works 
+
+When you create a distribution, CloudFront provides a domain name for it, such as d111111abcdef8.cloudfront.net. Instead of using this provided domain name, you can use an alternate domain name 
+but there are some requirement for Alternate Domain Name
+-> 	All alternate domain names (CNAMEs) must be lowercase.
+	
+->	To add an alternate domain name (CNAME) to a CloudFront distribution, you must attach to your distribution a trusted, valid *SSL/TLS* certificate that covers the alternate domain
+	name. This ensures that only people with access to your domain’s certificate can associate with CloudFront a CNAME related to your domain.
+	
+->	can use a self-signed certificate to validate an existing CNAME, but not for a new CNAME. CloudFront supports the same certificate authorities as Mozilla.
+
+->	However, you can’t add alternate domain names that are at levels higher or lower than the wildcard. For example, you can’t add the alternate domain names example.com or
+	marketing.product.example.com.
+	
+->	You want to add marketing.product.example.com as an alternate domain name. To do this, you can list *.product.example.com on the certificate, or you can list
+	marketing.product.example.com itself on the certificate.
+
+->	You cannot add an alternate domain name to a CloudFront distribution if the same alternate domain name already exists in another CloudFront distribution, even if your AWS account
+	owns the other distribution.
+
+
+->	404	Not Found
+->	414	Request-URI Too Large
+->	500	Internal Server Error
+->	501	Not Implemented
+->	502	Bad Gateway
+->	503	Service Unavailable
+->	504	Gateway Time-out
+
+->	400	Bad Request
+->	403	Forbidden
+->	405	Method Not Allowed
+->	412¹	Precondition Failed
+->	415¹	Unsupported Media Type

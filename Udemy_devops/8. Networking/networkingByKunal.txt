@@ -1,0 +1,284 @@
+COMPUTER full form = Common operating machine purposely used for technologies and educational research 
+Sputnik =  first artificial Earth satellite send by soviet union in 4th october 1957.
+DARPA = Defence Advance Research Projects Agency (they do all the scientific research and other stuff, 
+they develop ARPANET, MIT, standford, UCLA, university of utah) 
+The first computer were connected at 1969 
+IETF = Internet Engineering Task Force
+TCP, UDP , HTTP (Transmission Control Protocol, User Datagram Protocol, HyperText transfer protocol) 
+DHCP (Dynamic host configuration protocols)
+SCTP (Stream control transmission control) 
+ISP (Internet Service Provider)
+DNS (Domain Name System)
+SSL vs TLS  (Secure Sockets Layer vs Transport Layer Security)
+SONet (Synchronous Optical Networking)
+NAT (Network Address Translation)
+Multiplexing and Demultiplexing 
+what is Modem 
+Modem is used to convert analogue signals into digital signals and vice versa, these converted signal are stored in the form of 0 and 1. . modem is layer  also known as signal translator.  
+
+Topologies: 
+1. Bus topology (single wire act like a back bone in which all computers are connected, if the main wire break all devices will be disconnected )
+2. Ring Topology (computers are connected like a ring but if computer A wants to send message to computer f it has to gone through with B & D, so unnecessary call are made and if the wire breaks you can't communicate )
+3. Star Topology (all the computers are connected to the centralized device but if the central device fails all the network will be fail)
+4. Tree Topology (its a combination of bus and star topology a main wire and with each central device many device are connected)
+5. Mesh Topology (every single computer is connected to every single computer but its expensive, and if you want to add computer you have to connect with all computer so scalability issues  ) 
+
+
+*****************************************************************************************
+Structure of the network 
+
+OSI model 
+7 layers 
+1. Application layer 
+2. Presentation layer 
+3. Session layer 
+4. Transport layer 
+5. Network Layer 
+6. Data Link Layer 
+7. Physical Layer
+
+There is also another model which is TCP/IP Model
+difference between TCP/IP model
+It is also known as Internet protocol suite developed by the DARPA 
+its almost like OSI model but it has five layers 
+1. Application (Application, Presentation, Session layers are merged into one)
+2. Transport layer
+3. Network Layer
+4. Data Link Layer 
+5. Physical Layer
+
+**************************************************************************************************
+1. APPLICATION LAYER.
+user interacts with this 
+like Whatsapp, browsers etc. we use to interact with this . . its on our devices (Now how data is transferred how data is communicated, what type of data is transferred which type of data is transferred, steps rules and regulations, they all are dependent on protocols)
+
+a. 	Client Server Architecture. how application talk to each others 
+	client sends the request and sever response it back
+	
+b. 	Peer to Peer Architecture (P2P Architecture)
+	On this application are running on various devices they are connected with each other so there is not any server or large
+	data center. In this very single computer are playing role of both client and server.  Torrent is the good example of this.
+	or maybe tor is also the good example of this.
+	
+	Repeater: Repeater operates at the physical layer. Its job to regenerate the signal over the same network before the signal
+	become too weak or corrupted. an important point to be noted about the repeaters is that they don't amplify the signals. When 
+	the signal becomes weak, they copy the signals bit by bits and regenerate it at the original strength. It is a 2 port device
+	
+	
+	Hub: it is basically a multiport repeater. A hub connects multiple wires coming from different branches.  
+  
+
+
+*******************************************************************************************************
+
+what is protocols ?? 
+A set of rules . 
+web protocols: how its work?? 
+TCP/IP Protocols = 
+a. HTTP (Hyper Text Transfer Protocol) 
+b. DHCP (Dynamic Host control protocols)
+c. FTP (File transfer protocol) (We dont use it anymore because we tranfer it through HTTP  )
+d. SMTP (Simple mail transfer protocol) how to sending email works. .its use to send the email 
+e. pop3 (post office protocols) & IMAP (Internet message access protocol) (to receive the email) 
+f. SSH (Seucre shell/ Secure Socket Shell)
+g. VNC (Virtual Network Computing) 
+Telnet (its beside tcp/ip protocols it used for controlling the device remotely very low level ) 
+UDP (User Datagram protocol)(connection-less / stateless connection *Data may be lost in this*)
+
+
+Status code 
+if its lies in 100 (1xx ranges *informational category code* )
+200 (2xx success code) 
+300 (3xx redirection purposes)
+4xx (Client error *which mean you have some mistakes like 404 the site not found you have written a wrong site or 400 which means bad request so its a client side error)
+5xx (Server error)
+********************************************************************************
+what are cookies? 
+it's a unique string that stored in a browser. HTTP is stateless that means it doesn't save anything so when you revisit the website http send the cookies in the header files from which the server knows that this person has visited before . . 
+there is also a third party cookies . . cookies that are setup 
+*****************************************************************************************************
+
+DNS = you can say the phonebook of the internet when we write google.com it use DNS to find the ip address.  
+mail.google.com = in this url mail is a sub domain, google is a second level domain, and .com is the top level domain 
+Root DNS servers = this server contain top level domains like .io, .org, .com etc
+who is maintaining the root server you can check it out on root-servers.org 
+when we write any URL in browser reslover first find it in cache.
+
+DNS is insecure its open to the world anyonw can see. even your ISP knows that which website you are visiting. 
+DoH = DNS over HTTPS 
+
+There are several things in DNS like 
+A record =  A record is <website name> in A <ip addr> (like this website name is in this IP address)
+NS Record = Name Server Record which server has this website like networkchunk.com in NS pablo.cloudflare.com 
+AAAA record (IPv6) <website name> in AAAA 2001:db8::1 (like A record in IPv4 ip addr its just in IPv6 ip address)
+MX record = Mail Exchanger (<website name> in mail.networkchunck.com )
+PTR record = pointer record (This is like reverse DNS IP to Domain name)
+CNAME record = Canonical Name (alias domain to real domain)
+TXT record = it was use in back time for any message or secret message 
+NSLOOKUP and whois.com is the website where you can see all DNS related things 
+can also check txt record and other record by dig command in terminal
+ 
+Checksum = its like a number, you are sending your data to your friend, so you attached the checksum while sending the data, and when your friend receive the data he also calculate the checksum if the checksum match and same than all is good otherwise there is an error while receiving the data. .
+
+Timers = we are trying to send the data packets to our friend, and when you send the packet you start the timer and when you get the response the timer automatically off. and if the channels break or your friend wouldn't able to get the packet, the timer will expire 
+
+Application layer protocols : HTTPS and others 
+transport layer protocol : TCP /UDP 
+Network layer protocol: IP 
+
+Sockets will attached the port number 
+
+UDP : User Datagram protocol is a connection less protocol, UDP uses checksums, in every data packet we have source port # and Destination port #, Length of datagram will also be added and checksum and what data you are sending. and 
+(*source port #, destination port #, length of datagram and checksum* are in header file and header file is 8 bytes 2 bytes of each and total size of data is 2^16 ) 
+
+use cases of UDP :  Its very fast, video conference apps uses UDP, DNS uses UDP, Gaming application also uses UDP, 
+
+Explain tcp and how its works 
+
+TCP : transmission Control Protocol 
+Transport layer protocol, it does the same thing which UDP do but differently, 
+TCP receive the data from the application (Raw data) and segments this data which mean divide data into chunks. and than add headers and timers and ports and so on and so forth. it also collect the data from network layer. 
+Congestion control  : Check that data has arrived and maintains the order of data. 
+HTTP use this protocol and we also use this protocol while sending the pdf and emails
+All the Pop, SMTP, IMAP all these uses TCP protocols, 
+Features of TCP protocols: this is connection oriented,
+First connection has to be established, 
+Error control 
+congestion control. 
+Fully duplex (Computer A can send file to computer B, Computer B can send file to Computer A or both can send files simultaneously)
+*ITS A HOST TO HOST PROTOCOL . .* 
+it will add a sequence number and a acknowledgment number.  
+
+
+3-way Handshake
+Client request the server and server accept the request and client reply back with ok message. . this is a 3-way handshake. . 
+You will send a flag which known as a synchronization flag (which mean a new connection has been established or trying to be establish) with the sequence number, this is just a flag and a value inside a header.
+Than as a response server send acknowledgment flag. It will also have a random sequence number based on the number sent by client (it do some math on the client sequence number) , and why random number because no one can guest the number to establish a connection with the server. 
+
+**************************************************************************************************************
+
+Network layer:
+In the transport layer we have data in segments and in network layer we have data in packets, and data-link layer has frames,   
+what work with the network layer, its routers. 
+Every device has its own network address, 
+
+routing table and forwarding table 
+If the node cannot directly connect to the destination node, it has to send it via other nodes along a route to the destination node. 
+A routing table is a database that keeps track of paths, like a map, and uses these to determine which way to forward traffic.
+The primary function of a router is to forward a packet toward its destination network, which is the destination IP address of the packet. To do this, a router needs to search the routing information stored in its routing table.
+With hop-by-hop routing, each routing table lists, for all reachable destinations, the address of the next device along the path to that destination: the next hop. Hop-by-hop is the fundamental characteristic of the IP Internet layer[1] and the OSI Network Layer.
+
+
+Who create hi table 
+Control plane, 
+the links between the routers are the edges.  
+
+There are two types of routing 
+Static Routing (in this you manually add in the routing table) 
+Dynamic Routing (When there is a change in network this will evolve accordingly)
+The algorithm which is used to find the path is 
+Bellman-Ford algorithm Path finding algorithms along with  
+Dijkstra's algorithm are also used in this. 
+The entire internet is built on this. 
+
+What is the network layer protocol ?
+
+Internet protocol IP is the network layer protocol. . 
+
+Class of IP address: classes are from Class A to Class E
+Class A = 0.0.0.0 - 127.255.255.255
+Class B = 128.0.0.0 - 191.255.255.255
+Class C = 192.0.0.0 - 223.255.255.255
+Class D = 224.0.0.0 - 239.255.255.255
+Class E = 240.0.0.0 - 255.255.255.255
+
+We have also Private IP class range
+
+Class A = 10.0.0.0 - 10.255.255.255 default subnet mask = 8 
+Class B = 172.16.0.0 - 172.31.255.255 default subnet mask = 16
+Class C = 192.168.1.0 - 198.168.1.255 default subnet mask = 24
+Class D = 224.0.0.0 - 239.255.255.255 for multicasting  
+Class E = 240.0.0.0 - 255.255.255.255 for R & D 
+
+PORTS 
+ports range are from 0 - 65535 (They are assigned by IANA *Internet Assigned Numbers Authority)
+0 - 1023 (These are System or well-known ports). These are common ports which most people used everyday
+1024 - 49151 (User or Registered Ports) (These are ports that can be registered by companies and developers) ^
+49152 - 65535 (Dynamic or Private Ports) (these are ports that our computer assign itself temporarily for session)
+^ 1102 Adobe server
+^ 1433 Microsoft SQL Server
+^ 1416 Novell
+^ 1527 oracle   
+
+Subnet Mask = subnet as it names it is the subcategory of network mean k ek network pe kitni devices ap ko chahye 
+jese companies me phone extension hote hain ek number hota hai phr us k dept k alag alag ext isi trha ek ip k sath kitni devices
+ab computer or network dono srf binary language hi smjhte hain . . 1 decide karte hain k kitne part network ko dene hain or kitne host ko 
+CIDR = classless Inter-Domain Routing (slash notation)
+when you see a ip like this 192.168.1.0/24 this mean 24 1 like 11111111.11111111.11111111.00000000 three parts are for network and one octet is for host this can produce 254 hosts 
+
+LoopBack Address
+
+packets header is of 20 bytes which contains = IPV, length, Identification, flags, protocol, checksum, address, TTL (time to live) etc.
+Time to live = 60 which mean while hoping if time takes above 60 packet will be lost
+
+IPv4 = Internet protocol version 4 (Consist of 32 bits (4 bytes) 0.0.0.0 four octets) it use quad dotted notation
+IPV4 => 2^32 = 4.2 billion which were thought to be enough but as users have increased rapidly so available IPv4 addresses have been exhausted or runout. So they introduced ipv6
+IPV6 => 2^32 x 4 =  3.4 x 10^38 
+IPv6 = Internet protocol version 6 (Consists of 128 bits (16 Bytes) eight groups of four hexadecimal digits each separated by colon)
+cons of IPV6 
+not backward compatible 
+
+Middle Boxes: A middlebox is a computer networking device that transforms, inspects, filters, and manipulates traffic for purposes other than packet forwarding. Examples of middleboxes include firewalls, network address translators (NATs), load balancers, and deep packet inspection (DPI) devices. some of them operate on network layer but they also exist in transport layer.
+
+Firewalls : There are two type of firewall one is stateless which doesnot store the state 
+and another is stateful (statefull is more efficient) which store the state in cache memory 
+
+Data link layer 
+ARP (Address resolution protocol) cache
+what frames header contain 
+source address, destination address, three control field kind, seq, ack 
+Data link layer address is known as MAC address of your devices
+FCS (Frame Check Sequence): It is a 2 byte or 4 bytes frame check sequence for error detection. The standard code used is CRC (cyclic redundancy code). It contains the error detection and error correction bits.
+
+
+IPsec = Internet Protocol secure 
+	yead set of protocol hai jo use hota hai network layer me osi model me. it secure connection by encryption and
+	authentication. protocol that is commonly used by VPN's. it create secure tunnel to protect the data. done in 2 phase 
+	using IKE (Internet Key Exchange) one is Authentication Header (AH) and another is Encapsulating Security Payload (EPS)
+	AH offers authentication and integration not encryption EPS offers authentication, integration and encryption. IPsec 
+	operates in two different mode, transport mode and tunnel mode, send data in smalls chunks, which contain IP header 
+	TCP header and payload     
+	
+	Transport mode contain IP Header, ESP header, TCP Header, payload, ECP Trailer, ECP Auth. in which TCP header payload an
+	ECP trailer are encrypted.
+
+	Tunnel mode contain New IP header, IP Header, ESP header, TCP Header, payload, ECP Trailer, ECP Auth. in which IP header,
+	TCP header, payload, ESP trailer are encrypted. Tunnel mode provide more security than Transport mode. 
+
+PPP (point to Point Protocol) is used to transmit multiprotocol data between two directly connected (point-to-point) computers. It contain the following items:
+Flag: It is of 1 byte that with bit pattern 01111110.
+Address: 1 byte which is set to 11111111 in case of the broadcast.
+Control: 1 byte set to a constant value of 11000000.
+Protocol: 1 or 2 bytes that define the type of data contained in the payload field.
+Payload: This carries the data from the network layer. The maximum length of the payload field is 1500 bytes.
+
+HDLC (High-level Data Link Control)  
+
+Error Detection 
+Packet switching (yeah kam krti hai networking layer p ya data link layer p yeah 2 tariqe use krte hain datagram virtual circuits, datagram kaam krti hai network layer p & virtual circuit kam krte hain data link p )
+different routes use kar k data pohacnhta hai receiver tak and is me seq me nahi pohanchta to receiver ko data arrange karna parta hai 
+circuit switching (yeah kam krti hai physical layer p) jis route k through jati hai woh bound ho jata hai us ko koi or use nahi kar sakta jese phone calls k lye zyada use hota hai aur is me data sequence me jata hai. . 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

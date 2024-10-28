@@ -1,0 +1,51 @@
+Linux Task
+
+Grant crontab access to the aim user while denying access to the kodekloud_rin user.
+
+
+
+Create a user named jerome with a non-interactive shell on App server 3 in Stratos Datacenter.
+
+
+
+
+Disable direct SSH root login across all application servers located in the Stratos Datacenter.
+
+
+
+
+/etc/resolv.conf on Nautilus App 3 server has wrong permissions, so that needs to be fixed and the correct ACLs needs to be applied.
+a. User virat must not have any permission on this file.
+b. User vivek should have read only permission on this file. Further, sysadmin group should have read/write permissions on this file.
+
+
+
+
+
+
+Create some directories as below under /opt directory on App server 3 in Stratos Datacenter.
+/opt/app/backup/latest
+
+
+
+Create a tar archive named logs.tar (under natasha's home) of /var/log/ directory.
+Now, create a compressed tar archive as well named logs.tar.gz (under natasha's home) of /var/log/ directory.
+
+
+
+
+a. Delete all lines containing the word copyright and save the results in /home/BSD_DELETE.txt file. (Please be aware of case sensitivity)
+b. Replace all occurrences of the word the (look for the exact match) with them and save the results in /home/BSD_REPLACE.txt file.
+Note: Let's say you are asked to replace the word to with from. In that case, make sure not to alter any words containing the string itself, for example; upto, contributor etc.
+
+
+
+
+
+where the nfsuser user is holding hundreds of processes, which is degrading the performance of the server. Therefore, we have a requirement to limit its maximum processes. Please set its maximum process limits as below:
+a. soft limit = 1027
+b. hard_limit = 2024
+
+
+
+

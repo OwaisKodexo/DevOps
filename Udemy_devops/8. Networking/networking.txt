@@ -1,0 +1,56 @@
+1. Networking components
+2. OSI models
+3. classification of networking based on geography
+4. networking devices
+5. Home Network 
+6. IP Addresses
+7. Protocols 
+8. DNS & DHCP 
+9. Networking Commands
+
+
+*******************************************************************
+people around the world uses computer network to communicate with each other. 
+
+OSI Model (Open System Interconnection), ISO has develop OSI, It is the model of communication. . 
+Its a seven layer architecture developed in 1984 
+7. Application 
+6. Presentation 
+5. Session 
+4. Transport 
+3. Network ()
+2. Data Link (its use mac address and llc and than transfer it network)
+1. Physical (Its like cable )
+
+****************************************************************************************
+MAC (Media Access control) 
+
+Mac Address have three types 
+Unicast 
+MultiCast 
+Broadcast 
+
+
+LLC (Logical Link Control )
+
+TCP/IP Model (Transmission Control Protocol) (Internet Protocols)
+
+*****************************************************************************************
+LAN (Local Area Network) http://web01/
+WAN (Wide Area Network)
+MAN (Metropolitan area network)
+CAN (Campus Area Network)
+PAN (Personal Area Network) Like Bluetooth , hotspot own personal network 
+
+Switch (for small area you need switch as switch connect multiple computers together)
+router (routers connects multiple network together)
+
+TCP and UDP 
+
+
+
+
+
+
+
+

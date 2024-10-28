@@ -1,0 +1,14 @@
+https://develop.sentry.dev/self-hosted/
+https://develop.sentry.dev/self-hosted/troubleshooting/
+https://medium.com/@akshaysolanki057/install-sentry-on-ec2-aws-self-hosted-sentry-6387c01935cb (can also see this) 
+
+always use the updated version of Sentry 
+make the directory 
+clone zip file from git repo of Sentry 
+cd sentry
+nano sentry.config.py
+uncomment CSRF line  
+
+systemctl daemon-reload, systemctl restart docker.service (if you have made any change in the sentry.conf.py or config.yaml run this command)
+if changing the Ip also change in the sentry.config.py and config.yml and if nginx container than also change in nginx
+https://github.com/getsentry/self-hosted/issues/3259 (container web error)

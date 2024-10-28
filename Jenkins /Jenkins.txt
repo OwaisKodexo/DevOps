@@ -1,0 +1,45 @@
+To intall jenkins https://www.jenkins.io/doc/book/installing/linux/
+openjdk must be installed before jenkins installation
+Jenkins Username = kodexoLabs786
+password = kodexolabs@786
+email = johndoe@gmail.com
+
+
+What Jenkins do? 
+Basically developers have to Write a code, test the code, build it and then push to version controlling system, what jenkins do is the fetch the code build it test it and deploy it, we use different tools for built, like maven, ant (not much used in times), gradle etc., test unit through JUnit, mocha etc. and for code analysis we can use sonarqube (open-source, ESlint, Find Bugs etc.)
+
+There are two types of jobs in jenkins 
+Freestyle vs pipeline As A code
+like bashscript we write a script to automate the task same in jenkins we create the jobs 
+*FreeStyle* are all graphical jobs fill the form and see its output. but the problem with this is that we have many jobs and many types, and you need to connect together to create a pipeline. fetch the code build the code on another job run if you want to create a new job have to do all the same things 100 of clicks, its not recommended in real-time now, as now we need everything as a code, secondly the problem with this is if the jenkins stop for some reasons you have to build it from scratch. freestyle have no way of knowing that what was running before. 
+
+
+*Pipeline as a code*
+pipeline created in groovy or similar to groovy, recommended now, if jenkins stops for any reason the build will start from where it left off.
+https://www.jenkins.io/doc/book/pipeline/ (how to write a pipeline you can see the documentation here)
+Jenkinsfile defines stages in CI/CD pipeline
+its a textfile with DSL syntax 
+there are two types of syntax in Jenkinsfile 
+	-> scripted 
+	-> Declarative (its the way forward now) mostly we use declarative.
+		-> provides richer syntactical features over Scripted Pipeline syntax, and
+		-> is designed to make writing and reading Pipeline code easier.
+Jenkinsfile Scripted context 
+
+node {
+	stages {}
+}
+
+
+Jenkinsfile Declarative context 
+
+pipeline { //its the key part of pipeline syntax, all the syntax will come under pipeline block. 
+	agent any
+	stages {
+		stage {
+			step {} //are common elements of both Declarative and Scripted Pipeline syntax. steps is Declarative 
+			Pipeline specific syntax that describes the steps to be run in this stage.
+			}
+		}
+}
+

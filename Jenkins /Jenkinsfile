@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+    tools {
+        maven 'Maven3'
+        jdk 'OracleJDK11'
+    }
+
+    stages {
+        stage('Fetch Code') {
+            steps {
+                git branch: 'main', url: 'https://github.com/owais-ashraf/vprofile-project.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'mvn install -DskipTests'
+            }
+        
+            post {
+                success {
+                    echo 'Archiving the artifact...'
+                    archiveArtifacts artifacts: '**/*.war', fingerprint: true
+                }
+            }
+        }
+        stage('UNIT TESTS'){
+            steps {
+                sh 'mvn test'
+            }
+        }
+
+    }   
+}
