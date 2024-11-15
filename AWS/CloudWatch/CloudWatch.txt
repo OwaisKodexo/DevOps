@@ -1,0 +1,38 @@
+install stress to stress out the CPU or ram we install this for checking cloudwatch that if our cloud watch is running fine when the cpu utilization is reached to the limit? 
+command for stress 
+
+
+nohup stress  -c 4 -t 300 (nohup -> the command will run in background, -c how many CPU's you want to use, -t time for you want to stress run) 
+
+
+Cloudwatch with ElasticBeanStalk 
+
+eb-engine.log -> to understand if something went wrong during the deployment process, like a missing dependency or a configuration error.
+
+/var/log/eb-hooks.log ->  you have a script to set up a database connection when your environment is being created. If the connection isn’t working, you can look into eb-hooks.log to see if there was an issue executing your script, such as an incorrect password or a timeout error.
+
+/var/log/web.stdout.log -> the application heartbeat
+
+
+/var/log/nginx/access.log -> If you notice a sudden spike in traffic to your signup page but no increase in actual signups, the access log might reveal that users are repeatedly hitting the page, possibly indicating a problem with the signup process.
+
+
+/var/log/nginx/error.log -> If users report a “502 Bad Gateway” error when trying to access your site, the error.log can help you pinpoint that the backend service your application relies on is down or unresponsive.
+
+
+
+When you create or update an environment, you can use a configuration file to set up and configure instance log streaming to CloudWatch Logs. The following example configuration file enables default instance log streaming. Elastic Beanstalk streams the default set of log files for your environment's platform. To use the example, copy the text into a file with the .config extension in the .ebextensions directory at the top level of your application source bundle.
+
+to enable logs in cloudwatch
+
+option_settings:
+  - namespace: aws:elasticbeanstalk:cloudwatch:logs
+    option_name: StreamLogs
+    value: true
+    
+    *****************************************************************************************************************************************************************************************************
+    
+    cloudwatch Beanstalk
+    
+    https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html
+

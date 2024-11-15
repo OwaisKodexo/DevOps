@@ -1,0 +1,15 @@
+github action workflow file syntax 
+
+https://docs.github.com/en/actions
+
+starts with 
+name: 
+run-name: can also omit it
+on:
+on: [push, fork]  //can also write like this 
+on:
+  push:
+    branches:
+      - main
+      - 'releases/**'
+

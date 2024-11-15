@@ -12,7 +12,7 @@ Security token -> 64027cbe8cc21052c97f681cb6cf179e5d371653
 
 sentry ->
 owais.ashraf@kodexolabs.com
-kodexolabs@786
+123SentryLabs$
 
 
 *******************************************************************
@@ -38,3 +38,4 @@ YR!JgS4-
 https://236529949305.signin.aws.amazon.com/console
 owais-ashraf-sm
 KodexoEc2sm1234$
+
